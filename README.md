@@ -19,3 +19,8 @@ cmake ..
 # Build
 cmake --build .
 ```
+
+```bash
+# Running
+./Debug/launch-break.exe <long timer (mins)> <short timer (mins)> <long break (mins)> <short break (secs)>
+```

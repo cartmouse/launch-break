@@ -72,6 +72,7 @@ void PortHandler::selectOutPort(void)
   std::cout << "\nSelect output port: " << std::endl;
   std::cin >> portNum;
   midiout->openPort(portNum);
+  std::cout << "\nPort opened: " << midiout->getPortName(portNum) << std::endl;
 }
 
 void PortHandler::sendMessage(std::vector<unsigned char> message)
